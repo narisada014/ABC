@@ -34,4 +34,7 @@ else:
         memo.append(len(str(div_arr[target_index])))
     print(min(memo))
 
+# https://drken1215.hatenablog.com/entry/2019/09/16/221500
+# 桁を更新し続けて最後が一番小さくなる組み合わせになるのでこの方法でやった方がいい
+
 
