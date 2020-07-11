@@ -3,7 +3,7 @@
 # 最後に100 * 100 * 100をするのはいいが、これは各nに対して計算を回すことになるので
 # 100000とか来たら100 * 100 * 100 * 100000になって無事死亡
 N = int(input())
-def shiki(a, b, c):
+def formula(a, b, c):
     return a ** 2 + b ** 2 + c ** 2 + a * b + b * c + c * a
 
 def condition(n):
@@ -14,7 +14,7 @@ def condition(n):
     for i in range(1, 105):
         for j in range(1, 105):
             for k in range(1, 105):
-                if shiki(i, j, k) == n:
+                if formula(i, j, k) == n:
                     count += 1
     print(count)
 
